@@ -6,7 +6,7 @@ import math
 
 class Queue:
     def __init__(self):
-        """ create an empty queue """
+   
         self.items = []
 
     def isEmpty(self):
@@ -49,7 +49,6 @@ class Customers_to_be_Served:
         '''
         :param Serve_Time: When customer is at the counter for being served
         :return: Total waiting time for that customer
-
         '''
 
         return Serve_Time - self.Customer_arrival_time
@@ -58,7 +57,6 @@ class Customers_to_be_Served:
 class Cashier_serving_Customer:
     def __init__(self, itemspm):
         '''
-
         :param itemspm:Items entered by the cashier per minute
         '''
 
@@ -83,7 +81,6 @@ class Cashier_serving_Customer:
         '''
         :param newCustomer: New customer at the counter
         :return: Returns the serving time of the new customer at the counter depending on the number of items ordered
-
         '''
         self.currentCustomer = newCustomer
         self.timeRemaining = newCustomer.getItem() * 60 / self.rate
@@ -104,7 +101,6 @@ def new_Customer():
 
 def simulation(numSec, itemsPermin):
     '''
-
     :param numSec: Time frame considered for simulation (can be anything)
     :param itemsPermin: Items entered by the cashier per min
     :return: average waiting time and the number of customers
@@ -178,7 +174,6 @@ def main():
     #10 simulations every time on changing the number of items entered per min, for time frame of 600 seconds"
     plt.show()
 
-    # So, the result of this simulation rejects the null hypothesis in favour of alternate hypothesis.
 
-if __name__ == "__main__":
-    main()
+
+main()
